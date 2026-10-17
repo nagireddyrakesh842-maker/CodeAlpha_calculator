@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11111b">
+  <title>CodeAlpha Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator">
+    <header class="header">
+      <div>
+        <p class="eyebrow">CODEALPHA INTERNSHIP</p>
+        <h1>Calculator</h1>
+      </div>
+      <span class="badge">02 / 04</span>
+    </header>
+
+    <section class="display" aria-label="Calculator display">
+      <p id="history" aria-live="polite">Ready to calculate</p>
+      <output id="screen" aria-live="off">0</output>
+    </section>
+
+    <section class="keys" aria-label="Calculator buttons">
+      <button class="key utility" data-action="clear">AC</button>
+      <button class="key utility" data-action="delete" aria-label="Delete last digit">DEL</button>
+      <button class="key utility" data-action="percent">%</button>
+      <button class="key operator" data-action="operator" data-value="/">÷</button>
+
+      <button class="key" data-action="digit" data-value="7">7</button>
+      <button class="key" data-action="digit" data-value="8">8</button>
+      <button class="key" data-action="digit" data-value="9">9</button>
+      <button class="key operator" data-action="operator" data-value="*">×</button>
+
+      <button class="key" data-action="digit" data-value="4">4</button>
+      <button class="key" data-action="digit" data-value="5">5</button>
+      <button class="key" data-action="digit" data-value="6">6</button>
+      <button class="key operator" data-action="operator" data-value="-">−</button>
+
+      <button class="key" data-action="digit" data-value="1">1</button>
+      <button class="key" data-action="digit" data-value="2">2</button>
+      <button class="key" data-action="digit" data-value="3">3</button>
+      <button class="key operator" data-action="operator" data-value="+">+</button>
+
+      <button class="key utility" data-action="sign">+/−</button>
+      <button class="key" data-action="digit" data-value="0">0</button>
+      <button class="key" data-action="decimal">.</button>
+      <button class="key equals" data-action="equals">=</button>
+    </section>
+
+    <p class="hint">Works with your screen and physical keyboard.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
